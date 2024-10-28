@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #fffafa;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+}
+.heading h1{
+    color: #FF6500;
+    font-size: 5rem;
+    text-align: center;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3,12rem);
+    grid-template-rows: repeat(3,12rem);
+    gap: 1rem;
+}
+.boxes .box{
+    border: none;
+    background-color: #fffafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.boxes .box:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+h2{
+    font-size: 2.5rem;
+    opacity: 0;
+}
+.footer-buttons{
+    display: flex;
+    gap: 2rem;
+}
+.footer-buttons button{
+    border: none;
+    background-color: #FF6500;
+    color: #fff;
+    padding: 1rem 5rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+@media (width<=425px){
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(3,9.7rem);
+        grid-template-rows: repeat(3,9.7rem);
+        gap: 1rem;
+    }
+    .footer-buttons{
+        width: 28.5rem;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .footer-buttons button{
+       padding: 1rem 2rem;
+    }
+}
